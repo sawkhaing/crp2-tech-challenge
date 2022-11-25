@@ -4,8 +4,8 @@ image:
   registry: adamgolab
 
 service:
-  port: 8000
-  targetPort: 80
+  port: 80
+  targetPort: 8000
 
 deployment:
   replicas: 1
