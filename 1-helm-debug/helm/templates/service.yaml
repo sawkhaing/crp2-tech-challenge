@@ -4,6 +4,7 @@ metadata:
   name: {{ .Values.image.name }}-{{.Values.deployment.depRegion}}
   labels:
     svc-name: {{ .Values.image.name }}-{{.Values.deployment.depRegion}}
+    version: {{ .Values.version }}
 spec:
   type: ClusterIP
   ports:
